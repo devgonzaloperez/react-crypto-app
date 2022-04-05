@@ -1,0 +1,14 @@
+.cardsContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 20px 0px 40px 0px;
+    }
+}

@@ -1,0 +1,143 @@
+.card{
+    padding: 20px;
+    height: 210px;
+    width: 20%;
+    margin: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(32, 46, 70, 0.85);
+    .dataAndPrice{
+        display: flex;
+        justify-content: space-between;
+        .data{
+            width: 55%;
+            display: flex;
+            padding: 10px;
+            .data__logo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+            .data__data{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 5px;
+                .data__data-name{
+                    padding: 5px;
+                    font-size: 20px;
+                }
+                .data__data-ticker{
+                    border-radius: 10px;
+                    background-color: rgb(5, 3, 37);
+                    padding: 6px;
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+        }
+        .price{
+            width: 45%;
+            padding: 10px;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .price__price{
+                font-size: 22px;
+                margin-bottom: 5px;
+                font-weight: 600;
+            }
+            .price__percentageChange{
+                font-size: 14px;
+                .low24{
+                    color: red;
+                }
+                .high24{
+                    color: green;
+                }
+                span{
+                    color: white;
+                }
+            }
+        }
+
+    }
+    .athAndPercentageChange{
+        display: flex;
+        justify-content: space-between;
+        .athAndMC{
+            width: 70%;
+            padding: 10px;
+            font-size: 14px;
+            .athAndMC__ath{
+                color: rgb(126, 126, 126);
+            }
+            .athAndMC__change{
+                color: rgb(126, 126, 126);
+            }
+            .athAndMC__mc{
+                color: rgb(126, 126, 126);
+            }
+            span{
+                color: white;
+            }
+        }
+        .percentageChange{
+            width: 30%;
+            padding: 10px;
+            text-align: right;
+            display: flex;
+            align-items: flex-end;
+            justify-content: right;
+            p{
+                border-radius: 10px;
+                padding: 5px;
+                
+            }
+            .down{
+                background-color: red;
+            }
+            .up{
+                background-color: green;
+            }
+            
+        }
+    }
+}
+
+.card:hover{
+    background-color: rgba(42, 60, 90, 0.85);
+}
+
+@media screen and (max-width: 1280px) {
+    .card{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card{
+        width: 45%;
+        min-width: 350px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .card{
+        width: 70%;
+    }
+    .card:hover{
+        background-color: rgba(32, 46, 70, 0.85);
+    }
+}
+
+
+
